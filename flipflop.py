@@ -26,20 +26,23 @@ def jkflipflop(j, k , Q):
     return 0 if Q else 1
 
 def dflipflop(d):
-    D = int(input("Enter the value of D "))
-
-    if(D == 0):
+    if(d == 0):
       print("Reset")
-    elif(D == 1):
+    elif(d == 1):
       print("Set")
+    else:
+      print ("Invalid Input")
+      return ''
 
-def tflipflop():
-  T = int(input("Enter the value of T "))
-  if(T == 0):
-    print("Set")
-  elif(T == 1):
-    print("Reset")
+def tflipflop(t):
+  if(t == 0):
+    print("Toggle")
+  elif(t == 1):
+    print("Hold")
+  else:
+    print ("Invalid Input")
 
+print ("===========MENU===========")
 print ("SR Flip Flop")
 print ("JK Flip Flop")
 print ("D Flip Flop")
@@ -58,11 +61,11 @@ elif choice == 2:
 
   jkflipflop(j, k, 1)
 elif choice == 3:
-  d = int(input("Enter s value: "))
+  d = int(input("Enter d value: "))
 
   dflipflop(d)
 elif choice == 4:
-  t = int(input("Enter r value: "))
+  t = int(input("Enter t value: "))
 
   tflipflop(t)
 else:
