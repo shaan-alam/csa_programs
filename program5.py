@@ -43,7 +43,7 @@ def main():
   binary_list(nibble)
   count=int(input("Enter 0 for count down and 1 for count up : "))
   if count==0:
-    print("Count up:\n")
+    print("Count down:\n")
     for i in range(0,16,1):
       count_down()
       print(*result)

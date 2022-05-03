@@ -76,6 +76,5 @@ a = input("Enter first binary number: ")
 b = input("Enter second binary number: ")
 
 print ("A = ", a)
-print ("B = ", b)                                                       
-
+print ("B = ", b)
 
