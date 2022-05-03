@@ -35,5 +35,5 @@ if check(a):
   while start <= end:
     print (binary(start), " - ", start)
     start += 1
-
-
+else:
+  print("Enter a 5-bit binary number")
