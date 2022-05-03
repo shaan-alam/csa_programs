@@ -21,7 +21,7 @@ def binary(a):
 
 
 def check (a):
-  if a < 0 or a > 11111:
+  if a > 11111 or len(str(a)) != 5:
     return False
 
   return True
